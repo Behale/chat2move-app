@@ -1,9 +1,6 @@
 export const isDev = process?.env?.NODE_ENV === 'development';
 
-// export const host = '95e5e8dd9265.ngrok.io';
-export const host = isDev
-  ? 'alex-papercups-staging.herokuapp.com'
-  : 'app.papercups.io';
+export const host = 'https://chat2move.herokuapp.com';
 
 export const isLocal = (hostname: string) => {
   return (

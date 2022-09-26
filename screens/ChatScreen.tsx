@@ -150,7 +150,7 @@ export default function ChatScreen({route, navigation}: Props) {
             }}
             renderItem={renderItem}
             renderSectionFooter={({section: {date}}) => (
-              <View style={tailwind('mt-3 mb-5 items-center')}>
+              <View style={tailwind('mt-3 mb-5 items-center -scale-y-100')}>
                 <Text style={tailwind('text-gray-500')}>{date}</Text>
               </View>
             )}

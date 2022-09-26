@@ -10,8 +10,8 @@ import {isDev} from '../config';
 // TOOD: figure out why ngrok doesn't seem to work here?
 // const SOCKET_URL = 'ws://localhost:4000/socket';
 export const SOCKET_URL = isDev
-  ? 'wss://alex-papercups-staging.herokuapp.com/socket'
-  : 'wss://app.papercups.io/socket';
+  ? 'wss://localhost:4000/socket'
+  : 'wss://chat2move.herokuapp.com/socket';
 
 export const SocketContext = React.createContext<{
   socket: Socket;

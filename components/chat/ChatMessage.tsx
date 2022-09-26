@@ -103,7 +103,12 @@ export const ChatMessage = ({
 
   if (isMe) {
     return (
-      <View style={{...tailwind('mb-2 px-4 justify-end'), ...style}}>
+      <View
+        style={{
+          ...tailwind('mb-2 px-4 justify-end max-w-full w-full break-words'),
+          ...style,
+        }}
+      >
         <View
           style={tailwind('py-2 px-3 bg-blue-500 ml-6 rounded-lg self-end')}
         >
